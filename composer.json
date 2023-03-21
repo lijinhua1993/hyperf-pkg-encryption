@@ -1,0 +1,35 @@
+{
+    "name": "hyperf-ljh/encryption",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf"
+    ],
+    "description": "适用于hyperf的加密组件",
+    "autoload": {
+        "psr-4": {
+            "HyperfLjh\\Encryption\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "hyperf/command": "^3.0",
+        "hyperf/di": "3.0.*",
+        "hyperf/framework": "3.0.*",
+        "phpseclib/phpseclib": "^3.0",
+        "ext-openssl": "*"
+    },
+    "suggest": {
+        "swow/swow": "Required to create swow components."
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfLjh\\Encryption\\ConfigProvider"
+        }
+    }
+}
